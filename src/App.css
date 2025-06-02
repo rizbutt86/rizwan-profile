@@ -1,0 +1,141 @@
+/* ------------------------------------
+   Minimal executive styling
+-------------------------------------*/
+:root {
+  --bg: #0f172a;            /* slate-900 */
+  --panel: #1e293b;         /* slate-800 */
+  --fg: #f1f5f9;            /* slate-50  */
+  --accent: #38bdf8;        /* sky-400   */
+  --muted: #94a3b8;         /* slate-400 */
+  font-family: Inter, 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 25% 10%, #152032 0%, #0f172a 80%);
+  color: var(--fg);
+}
+
+/* -------- Header -------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  background: var(--panel);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+.name-block {
+  margin-left: 16px;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.title {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+/* -------- Main -------- */
+.main {
+  max-width: 880px;
+  margin: 50px auto;
+  padding: 0 24px 90px;
+}
+
+.card {
+  background: var(--panel);
+  border-left: 4px solid var(--accent);
+  padding: 26px 28px 22px;
+  margin-bottom: 34px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 1.15rem;
+  letter-spacing: 0.2px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.card li {
+  margin: 6px 0;
+}
+
+/* -------- Contact strip -------- */
+.contact {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+.resume {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.resume-thumb {
+  width: 200px;
+  height: auto;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.resume-thumb:hover {
+  transform: scale(1.05);
+}
+
+.resume-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.resume-caption a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.resume-caption a:hover {
+  text-decoration: underline;
+}

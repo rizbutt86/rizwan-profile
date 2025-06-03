@@ -1,102 +1,79 @@
 /* ------------------------------------
-   Polished VP-style profile | App.jsx
+   Polished Director-style profile | App.jsx
 -------------------------------------*/
-import './App.css';
-import profilePic from './assets/rizwan-profile.png';
-import logo from './assets/logo.png';
-import resumeThumb from './assets/resume-thumb.jpg';
+import React from "react";
+import "./App.css";
+import profilePic from "./assets/rizwan-profile.png";
+import logo from "./assets/logo.png";
 
 export default function App() {
   return (
-    <div className="app">
-      {/* ——— Header ——— */}
-      <header className="header shadow-sm">
-        <div className="header-left">
-          <img src={profilePic} alt="Muhammad Rizwan Butt" className="avatar" />
-          <div className="name-block">
-            <h1 className="name">Muhammad Rizwan Butt</h1>
-            <span className="title">Data & AI Platform Leader</span>
-          </div>
-        </div>
-        <img src={logo} alt="Logo" className="logo" />
+    <div className="bg-gray-900 min-h-screen text-white font-sans">
+      <header className="flex items-center justify-between p-6 border-b border-gray-700">
+        <img
+          src={profilePic}
+          alt="Rizwan Butt"
+          className="h-16 w-16 rounded-full border border-gray-600"
+        />
+        <h1 className="text-xl font-bold">Rizwan Butt – Director, PT&S Candidate</h1>
+        <img src={logo} alt="Logo" className="h-10" />
       </header>
 
-      {/* ——— Main ——— */}
-      <main className="main">
-        <Card
-          heading="Executive Highlights"
-          bullets={[
-            'Scaled enterprise data platforms to 1 500+ users; underpinning > $2 B CAPEX/OPEX decisions.',
-            'Cut cloud OPEX from CAD 9 M → 5 M annually via FinOps chargeback & smart workload placement.',
-            'Led a core team of 12 with oversight of 50+ matrixed and vendor resources; established scalable hiring and onboarding processes to support sustained team expansion.'
-          ]}
-        />
-        <Card
-          heading="Signature Platforms"
-          bullets={[
-            'PlanAid – 20 B records / month forecasting engine (35 % faster planning; enabled 5G Home rollout to 100 K subs in 2 quarters).',
-            'Netstat – real-time network monitor (1.2 M API calls / day, 99.95 % SLA); mean-time-to-detect improved 42 %.',
-            'NetWorth Customer-360 API – 500 K requests / day, 99.9 % uptime; churn model AUC 0.88.'
-          ]}
-        />
-        <Card
-          heading="Leadership & Culture"
-          bullets={[
-            'Founded Rogers Data Engineering Community of Practice (120+ members).',
-            'Provide mentorship to emerging talent in data science, analytics, and development across the organization.',
-            'Top Performing Manager (2021-24) & Ted Rogers Award (2023).'
-          ]}
-        />
+      <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
+        <section className="text-xl leading-relaxed space-y-4">
+          <p>
+            I’m a data, platform, and AI operations leader with 12+ years of experience driving transformation across wireless, network engineering, CX, and strategy domains.
+          </p>
+          <p>
+            Currently leading 4 discipline managers (Data Science, Software Dev, Data Engineering, GIS) and 15 FTEs with influence across 50+ cross-org collaborators. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
+          </p>
+          <p>
+            Notably, I led the E2E anomaly detection framework through our real-time monitoring platform, <strong>Netstat</strong>—the single source of truth for all radio and core KPIs, enabling proactive insights from RAN to Core with 1.2M API calls/day and 99.95% SLA.
+          </p>
+        </section>
 
-        {/* ——— Contact row ——— */}
-        <div className="contact">
-          <a href="mailto:rizwanbutt86@gmail.com">rizwanbutt86@gmail.com</a>
-          <span>•</span>
-          <a
-            href="https://www.linkedin.com/in/muhammadrizwanbutt"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <span>•</span>
-          <a href="tel:+15144028508">+1-514-402-8508</a>
-        </div>
-		 {/* ——— Resume section ——— */}
-		<div className="resume">
-		<a href="/muhammad-rizwan-resume.pdf" target="_blank" rel="noreferrer">
-		 <img
-         src={resumeThumb}
-         alt="View Résumé"
-         className="resume-thumb"
-         />
-        </a>
-       <div className="resume-caption">
-        <a
-		href="/muhammad-rizwan-resume.pdf"
-		target="_blank"
-		rel="noopener noreferrer"
-		className="mt-4 inline-block text-blue-500 hover:underline"
-	    >
-       View the full resume
-       </a>
-       </div>
-      </div>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gray-800 p-6 rounded-lg shadow">
+            <h2 className="text-lg font-semibold mb-2">Organizational Leadership</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Lead 4 managers, 15 FTEs, 50+ sphere of influence</li>
+              <li>Built succession plans and 120+ member CoP</li>
+              <li>Single point of accountability for strategy, funding, and delivery</li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg shadow">
+            <h2 className="text-lg font-semibold mb-2">Technology & Platforms</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Built PlanAid (20B records/mo) and Netstat (1.2M API calls/day)</li>
+              <li>Netstat powers E2E anomaly detection from RAN to Core</li>
+              <li>Customer 360 APIs with 99.9% uptime & churn prediction</li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg shadow">
+            <h2 className="text-lg font-semibold mb-2">Strategy & Storytelling</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Secured $17M+ in platform & GenAI investments</li>
+              <li>Own KPI reporting across CAPEX, delivery, CX, cost</li>
+              <li>Delivered PoCs to CTO & Board with business case wins</li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg shadow">
+            <h2 className="text-lg font-semibold mb-2">Cross-Functional Delivery</h2>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Worked across OSS, Engineering, Digital, and Marketing</li>
+              <li>Unified data access through privacy-first cloud solutions</li>
+              <li>GenAI copilots for KPI contextualization & triage</li>
+            </ul>
+          </div>
+        </section>
       </main>
-    </div>
-  );
-}
 
-/* ----- Re-usable card component ----- */
-function Card({ heading, bullets }) {
-  return (
-    <section className="card">
-      <h2>{heading}</h2>
-      <ul>
-        {bullets.map((b, i) => (
-          <li key={i}>{b}</li>
-        ))}
-      </ul>
-    </section>
+      <footer className="text-center text-gray-400 text-sm py-6 border-t border-gray-700">
+        Muhammad Rizwan Butt · <a href="https://linkedin.com/in/muhammadrizwanbutt" className="text-blue-400 hover:underline">LinkedIn</a>
+      </footer>
+    </div>
   );
 }

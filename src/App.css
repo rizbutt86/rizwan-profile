@@ -139,3 +139,7 @@ body {
 .resume-caption a:hover {
   text-decoration: underline;
 }
+
+a:hover {
+  color: #60a5fa; /* light blue */
+}

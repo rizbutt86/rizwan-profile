@@ -28,7 +28,7 @@ export default function App() {
             Currently leading 4 discipline managers (Data Science, Software Dev, Data Engineering, GIS) and 15 FTEs with influence across 50+ cross-org collaborators. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
           </p>
           <p>
-            Notably, I led the E2E anomaly detection framework through our real-time monitoring platform, <strong>Netstat</strong>—the single source of truth for all radio and core KPIs, enabling proactive insights from RAN to Core with 1.2M API calls/day and 99.95% SLA.
+            Notably, I led the E2E anomaly detection framework through our real-time monitoring platform, <strong>Netstat</strong>—the single source of truth for all radio and core KPIs, enabling proactive insights from RAN to Core with 99.98% SLA.
           </p>
         </section>
 
@@ -37,7 +37,7 @@ export default function App() {
             <h2 className="text-lg font-semibold mb-2">Organizational Leadership</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>Lead 4 managers, 15 FTEs, 50+ sphere of influence</li>
-              <li>Built succession plans and 120+ member CoP</li>
+              <li>Built succession plans and 120+ member Cummunity of Practice</li>
               <li>Single point of accountability for strategy, funding, and delivery</li>
             </ul>
           </div>
@@ -69,8 +69,24 @@ export default function App() {
             </ul>
           </div>
         </section>
+		{/* Resume Section */}
+		<section className="bg-gray-800 p-6 rounded-lg shadow text-center">
+		<h2 className="text-lg font-semibold mb-4">View My Resume</h2>
+		<a
+			href="/Muhammad_Rizwan_Butt_Resume.pdf"
+			target="_blank"
+			rel="noopener noreferrer"
+		className="inline-block transform hover:scale-105 transition duration-300"
+		>
+		<img
+		src={require("./assets/resume-thumb.jpg")}
+		alt="Resume Thumbnail"
+		className="w-48 mx-auto border border-gray-600 rounded-md shadow-lg hover:shadow-xl"
+		/>
+		<p className="mt-2 text-blue-400 hover:underline">Click to view full resume</p>
+	</a>
+	</section>
       </main>
-
       <footer className="text-center text-gray-400 text-sm py-6 border-t border-gray-700">
         Muhammad Rizwan Butt · <a href="https://linkedin.com/in/muhammadrizwanbutt" className="text-blue-400 hover:underline">LinkedIn</a>
       </footer>

@@ -13,7 +13,7 @@ export default function App() {
           alt="Rizwan Butt"
           className="h-16 w-16 rounded-full border border-gray-600"
         />
-        <h1 className="text-xl font-bold">Rizwan Butt – Director, PT&S Candidate</h1>
+        <h1 className="text-xl font-bold">Rizwan Butt – Director Platform, Technology & Services Candidate</h1>
         <img src={logo} alt="Logo" className="h-10" />
       </header>
 

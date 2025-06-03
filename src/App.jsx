@@ -20,10 +20,10 @@ export default function App() {
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
         <section className="text-xl leading-relaxed space-y-4">
           <p>
-            I’m a data, platform, and AI operations leader with 12+ years of experience driving transformation across wireless, network engineering, CX, and strategy domains.
+            I’m a data, platform, and AI operations leader with 12+ years of experience driving transformation across wireless network engineering, CX, and strategy domains.
           </p>
           <p>
-            Currently leading 4 discipline managers (Data Science, Software Dev, Data Engineering, GIS) and 15 FTEs with influence across 50+ cross-org collaborators. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
+            Currently leading 4 teams(Data Science, Software Dev, Data Engineering, GIS) under Wireless Network Innovation Group, cross-org collaboration with Marketing, Digital and PMO. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
           </p>
           <p>
             Notably, I led the E2E anomaly detection framework through our real-time monitoring platform, <strong>Netstat</strong>—the single source of truth for all radio and core KPIs, enabling proactive insights from RAN to Core with 99.98% SLA.
@@ -43,7 +43,7 @@ export default function App() {
           <div className="bg-gray-800 p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2">Technology & Platforms</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Built PlanAid (20B records/mo) powers startegic planning</li>
+              <li>Built PlanAid (20B records/mo) powers CX analytics and startegic planning</li>
               <li>Netstat powers E2E anomaly detection from RAN to Core</li>
               <li>Customer 360 APIs with 99.9% uptime & churn prediction</li>
             </ul>

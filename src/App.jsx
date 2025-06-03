@@ -43,7 +43,7 @@ export default function App() {
           <div className="bg-gray-800 p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2">Technology & Platforms</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Built PlanAid (20B records/mo) and Netstat (real-time monitoring & anomaly detection)</li>
+              <li>Built PlanAid (20B records/mo) powers startegic planning</li>
               <li>Netstat powers E2E anomaly detection from RAN to Core</li>
               <li>Customer 360 APIs with 99.9% uptime & churn prediction</li>
             </ul>

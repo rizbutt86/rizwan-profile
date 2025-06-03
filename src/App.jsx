@@ -23,7 +23,7 @@ export default function App() {
             I’m a data, platform, and AI operations leader with 12+ years of experience driving transformation across wireless network engineering, CX, and strategy domains.
           </p>
           <p>
-            Currently leading 4 teams(Data Science, Software Dev, Data Engineering, GIS) under Wireless Network Innovation Group, cross-org collaboration with Marketing, Digital and PMO. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
+            Currently leading 4 teams (Data Science, Software Dev, Data Engineering, GIS) under Wireless Network Innovation Group, cross-org collaboration with Marketing, Digital and PMO. I’ve secured $17M+ in CAPEX/OPEX funding, built enterprise platforms adopted by 1,500+ users, and presented KPI scorecards to ELT and board-level audiences.
           </p>
           <p>
             Notably, I led the E2E anomaly detection framework through our real-time monitoring platform, <strong>Netstat</strong>—the single source of truth for all radio and core KPIs, enabling proactive insights from RAN to Core with 99.98% SLA.
@@ -34,8 +34,8 @@ export default function App() {
           <div className="bg-gray-800 p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2">Organizational Leadership</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Lead 4 managers, 15 FTEs, 50+ sphere of influence</li>
-              <li>Built succession plans and 120+ member Community of Practice</li>
+              <li>Successfully built and led 4 cross-functional teams, streamlining the hiring pipeline for each specific stream to attract top talent</li>
+              <li>Built robust succession plans for key talent and managed a thriving 120+ member Community of Practice</li>
               <li>Single point of accountability for strategy, funding, and delivery</li>
             </ul>
           </div>

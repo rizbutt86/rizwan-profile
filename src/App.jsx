@@ -14,7 +14,7 @@ export default function App() {
           className="h-16 w-16 rounded-full border border-gray-600"
         />
         <h1 className="text-xl font-bold">Rizwan Butt – Director Platform, Technology & Services Candidate</h1>
-        <img src={logo} alt="Logo" className="h-10" />
+        <img src={logo} alt="Logo" className="h-10 w-10 rounded-full border border-gray-600" />
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">

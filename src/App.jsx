@@ -1,10 +1,8 @@
-/* ------------------------------------
-   Polished Director-style profile | App.jsx
--------------------------------------*/
 import React from "react";
 import "./App.css";
 import profilePic from "./assets/rizwan-profile.png";
 import logo from "./assets/logo.png";
+import resumeThumb from "./assets/resume-thumb.jpg";
 
 export default function App() {
   return (
@@ -37,7 +35,7 @@ export default function App() {
             <h2 className="text-lg font-semibold mb-2">Organizational Leadership</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>Lead 4 managers, 15 FTEs, 50+ sphere of influence</li>
-              <li>Built succession plans and 120+ member Cummunity of Practice</li>
+              <li>Built succession plans and 120+ member Community of Practice</li>
               <li>Single point of accountability for strategy, funding, and delivery</li>
             </ul>
           </div>
@@ -45,7 +43,7 @@ export default function App() {
           <div className="bg-gray-800 p-6 rounded-lg shadow">
             <h2 className="text-lg font-semibold mb-2">Technology & Platforms</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Built PlanAid (20B records/mo) and Netstat (1.2M API calls/day)</li>
+              <li>Built PlanAid (20B records/mo) and Netstat (real-time monitoring & anomaly detection)</li>
               <li>Netstat powers E2E anomaly detection from RAN to Core</li>
               <li>Customer 360 APIs with 99.9% uptime & churn prediction</li>
             </ul>
@@ -69,26 +67,34 @@ export default function App() {
             </ul>
           </div>
         </section>
-		{/* Resume Section */}
-		<section className="bg-gray-800 p-6 rounded-lg shadow text-center">
-		<h2 className="text-lg font-semibold mb-4">View My Resume</h2>
-		<a
-			href="/Muhammad_Rizwan_Butt_Resume.pdf"
-			target="_blank"
-			rel="noopener noreferrer"
-		className="inline-block transform hover:scale-105 transition duration-300"
-		>
-		<img
-		src={require("./assets/resume-thumb.jpg")}
-		alt="Resume Thumbnail"
-		className="w-48 mx-auto border border-gray-600 rounded-md shadow-lg hover:shadow-xl"
-		/>
-		<p className="mt-2 text-blue-400 hover:underline">Click to view full resume</p>
-	</a>
-	</section>
+
+        {/* Resume Section */}
+        <section className="bg-gray-800 p-6 rounded-lg shadow text-center">
+          <h2 className="text-lg font-semibold mb-4">View My Resume</h2>
+          <a
+            href="/muhammad-rizwan-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src={resumeThumb}
+              alt="Resume Thumbnail"
+              className="w-48 mx-auto border border-gray-600 rounded-md shadow-lg hover:shadow-xl"
+            />
+            <p className="mt-2 text-blue-400 hover:underline">Click to view full resume</p>
+          </a>
+        </section>
       </main>
+
       <footer className="text-center text-gray-400 text-sm py-6 border-t border-gray-700">
-        Muhammad Rizwan Butt · <a href="https://linkedin.com/in/muhammadrizwanbutt" className="text-blue-400 hover:underline">LinkedIn</a>
+        Muhammad Rizwan Butt ·{" "}
+        <a
+          href="https://linkedin.com/in/muhammadrizwanbutt"
+          className="text-blue-400 hover:underline"
+        >
+          LinkedIn
+        </a>
       </footer>
     </div>
   );
